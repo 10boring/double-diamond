@@ -21,10 +21,22 @@ with selection, the one thing the method forbids.
 
 ## Precondition
 
-A `## Define` problem statement must exist in the working file (`discover` creates the file in the
-working repo at `docs/designthinking/<slug>.md`, else `~/.claude/design/<slug>.md`, gated by its
-`Status` field). Require `Status ≥ developing`; if it is lower or the file is missing, stop and
-point to `define` (or `discover` if the problem isn't grounded either).
+`develop` widens on a framed problem, so the gate reads the upstream chain for **genuine content**
+in the working file (`docs/designthinking/<slug>.md`, else `~/.claude/design/<slug>.md`):
+
+- `## Discover` — real problem material;
+- `## Define` — a reframed problem **the operator confirmed**, plus the named smuggled assumption.
+
+`Status` is a breadcrumb for the reader, never the gate: a hand-set `Status:` line proves nothing;
+the content and the operator's confirmation do.
+
+<HARD-GATE>
+No option pool without a real, operator-confirmed `## Define` above it. If the problem was never
+framed — or you'd be about to write the `## Define` yourself — back up and frame it with the
+operator first (→ `define`, or `discover` if it isn't grounded either). It's a 30-second detour and
+then you're generating on the real problem, not the raw ask. The operator may step over on purpose,
+but only consciously and **on record** in `## Develop`.
+</HARD-GATE>
 
 ## When to skip it
 

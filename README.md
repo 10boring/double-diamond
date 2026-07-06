@@ -3,7 +3,7 @@
 **Stop your coding agent from confidently building the wrong thing.**
 
 Design thinking's *Double Diamond* and Lean Startup's *Build-Measure-Learn*, packaged as five
-Claude Code skills your agent actually invokes and follows. Before it writes a line of code, it
+move-skills (plus a `guide` front door) your agent actually invokes and follows. Before it writes a line of code, it
 frames the real problem, weighs real options, and proves the riskiest assumption cheaply.
 
 > The most expensive thing you can ship is the wrong thing, built well.
@@ -47,6 +47,10 @@ can't skip.
 
 You finish at a **minimum viable product (MVP)** — or **feature (MVF)** — the smallest real thing
 worth putting in front of real users, having killed the bad bets for the price of an afternoon.
+
+And a front door: **`guide`** senses where you are, names your current move and the next, and points
+you to the right skill — bowing out when there's no design decision in play, so it never hijacks
+another tool's "where are we?".
 
 ## Why it's different
 

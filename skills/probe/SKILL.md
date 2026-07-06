@@ -35,15 +35,32 @@ implement, never a throwaway experiment. Don't conflate the two.
 
 ## Precondition
 
-A **chosen idea** must exist in the working file's `## Decide` (`discover` creates the file in the
-working repo at `docs/designthinking/<slug>.md`, else `~/.claude/design/<slug>.md`, gated by its
-`Status` field). Require a chosen idea, then:
-- `Status: probing` — proceed.
-- `Status` **lower**, or the file missing — stop and point to `decide` (or `discover`/`define`/
-  `develop` if the upstream isn't done).
-- `Status` **higher** (e.g. `ready-to-specify`) but no `## Probe` was ever run — `decide` handed
-  straight to a spec and skipped this move — **back `Status` to `probing` and run**. Backing into a
-  skipped phase, or re-running one already done, is legitimate iteration, not an error.
+`probe` de-risks a chosen idea, so the gate reads the whole upstream chain for **genuine content**
+in the working file (`docs/designthinking/<slug>.md`, else `~/.claude/design/<slug>.md`):
+
+- `## Discover` — real problem material;
+- `## Define` — a reframed problem **the operator confirmed**, plus the named smuggled assumption;
+- `## Develop` — a pool of distinct options;
+- `## Decide` — the one **chosen idea**.
+
+`Status` is a breadcrumb for the reader, never the gate: a hand-set `Status:` line proves nothing;
+the content and the operator's confirmation do.
+
+<HARD-GATE>
+No probe without a real chosen idea sitting on a real, operator-confirmed `## Define`. If the chain
+is missing a link, back up to the phase that's actually empty (→ `decide`, or `develop`/`define`/
+`discover` if the gap is further up) — moving `Status` back is the method working, not a failure.
+
+Two things this gate deliberately *does* let through, because backing into a skipped phase is
+legitimate iteration, not an error:
+- `Status: ready-to-specify` but no `## Probe` was ever run — `decide` handed straight to a spec and
+  skipped this move. Back `Status` to `probing` and run.
+- Re-running a probe already done.
+
+Stepping over on purpose is allowed too — the operator may accept a named untestable risk and
+proceed — but only consciously and **on record** in `## Probe`. Only the *accidental* skip is
+blocked.
+</HARD-GATE>
 
 ## When to skip it
 

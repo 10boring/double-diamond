@@ -26,10 +26,37 @@ not, the chosen idea goes to `probe` next, not into a spec.
 
 ## Precondition
 
-A solution **option pool** (`## Develop`) must exist in the working file (`discover` creates the
-file in the working repo at `docs/designthinking/<slug>.md`, else `~/.claude/design/<slug>.md`,
-gated by its `Status` field). Require `Status ≥ deciding`; if it is lower or the file is missing,
-stop and point to `develop` (or `discover`/`define` if the problem isn't framed either).
+`decide` picks from a pool that a real `develop` produced on top of a real `define`. So the gate
+reads the **upstream chain**, not a status word. The working file
+(`docs/designthinking/<slug>.md`, else `~/.claude/design/<slug>.md`) must carry, with genuine
+content:
+
+- `## Discover` — real problem material;
+- `## Define` — a reframed problem **the operator confirmed**, plus the named smuggled assumption;
+- `## Develop` — a pool of distinct options.
+
+`Status` is just a breadcrumb for the reader, never the gate: a hand-set `Status:` line proves
+nothing. The content and the operator's confirmation do (that last one is the signal you can't
+author on their behalf).
+
+<HARD-GATE>
+No pick without a real `## Define` and `## Develop` above it. If the pool only lives here in the
+chat, or `## Define` was never confirmed with the operator, don't decide on it yet — back up and
+frame it (→ `define`, or `discover` if the problem isn't grounded either). It's a 30-second detour
+and then the choice actually means something; moving `Status` back is the method working, not a
+failure.
+
+Stepping over on purpose is allowed — the operator can say "yes, we skipped define, choose anyway" —
+but only consciously and **on record**: note the skipped phase in `## Decide`. Only the *accidental*
+skip is blocked.
+</HARD-GATE>
+
+**Caught yourself thinking...**
+
+| Thought | Nah |
+|---------|-----|
+| "The pool's right here in the chat" | A chat pool isn't a `## Develop` — no operator, no blind agent lenses, no framed `## Define` above it. Run it through `develop` first. |
+| "I'll just write the `## Define` myself" | One you authored without the operator's confirmation isn't a define. Confirm the reframe with them. |
 
 ## When to skip it
 

@@ -18,10 +18,17 @@ surfaces, park it for `develop`.
 
 ## Precondition
 
-A `## Discover` section must exist in the working file (`discover` creates it in the working repo
-at `docs/designthinking/<slug>.md`, else `~/.claude/design/<slug>.md`, gated by its `Status`
-field). Require `Status ≥ defining`; if it is lower or the file is missing, stop and point to
-`discover`.
+`define` narrows real discovery, so the gate reads for a `## Discover` with **genuine content** in
+the working file (`docs/designthinking/<slug>.md`, else `~/.claude/design/<slug>.md`) — actual
+problem material, not an empty heading. `Status` is a breadcrumb for the reader, not the gate; a
+hand-set `Status:` line proves nothing.
+
+<HARD-GATE>
+No reframe without real `## Discover` material above it. If discovery never happened — the problem
+is still just the raw ask — back up and ground it first (→ `discover`). It's the method working,
+not a failure. The operator may step over on purpose ("skip discover, frame it anyway"), but only
+consciously and **on record** in `## Define`.
+</HARD-GATE>
 
 ## Workflow
 

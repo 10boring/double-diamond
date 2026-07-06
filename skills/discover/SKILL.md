@@ -43,8 +43,11 @@ Status: discovering | defining | developing | deciding | probing | ready-to-spec
 → Handoff: brainstorming to specify "<chosen idea>", then plan → implement → MVP/MVF
 ```
 
-`Status` is the precondition gate for every phase; set it to `defining` once `## Discover` is
-written. Phases re-enter freely and `Status` moves both ways; the working file is a **living
+`Status` is a **breadcrumb for the reader, not the gate**. Each downstream phase gates on the
+*content* of the sections above it (real material, plus the operator's confirmation where the phase
+calls for it), never on this word — a hand-set `Status:` proves nothing. Set it to `defining` once
+`## Discover` is written, as a signpost. Phases re-enter freely and `Status` moves both ways; a
+phase sending you back is the method working, not a failure. The working file is a **living
 document**, revised in place, not only appended.
 
 ## Workflow
