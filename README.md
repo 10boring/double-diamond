@@ -2,6 +2,9 @@
 
 **Stop your coding agent from confidently building the wrong thing.**
 
+> 🧪 **Beta.** Early days, and testers are very welcome. If something breaks or feels off, tell me
+> at **support@10boring.com**.
+
 Design thinking's *Double Diamond* and Lean Startup's *Build-Measure-Learn*, packaged as five
 move-skills (plus a `guide` front door) your agent actually invokes and follows. Before it writes a line of code, it
 frames the real problem, weighs real options, and proves the riskiest assumption cheaply.
@@ -142,6 +145,9 @@ a product/feature, **not** a throwaway experiment; don't conflate the two.
 
 ## Install
 
+> **Tested in Claude Code only.** These are plain-markdown skills, so they may work in other
+> skill-aware harnesses, but that is unverified — Claude Code is the only environment tried so far.
+
 Add the marketplace from GitHub and install the plugin:
 
 ```
@@ -151,7 +157,9 @@ Add the marketplace from GitHub and install the plugin:
 
 ## License
 
-Private and proprietary. All rights reserved. See `LICENSE`.
+[PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0) —
+free for any **noncommercial** purpose; commercial use needs a separate license from 10boring. See
+`LICENSE`.
 
 The Double Diamond framework is © Design Council, licensed CC BY 4.0; this plugin is an independent
 implementation and extension.

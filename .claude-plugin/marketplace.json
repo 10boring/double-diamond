@@ -1,6 +1,6 @@
 {
   "name": "double-diamond",
-  "description": "Design thinking's Double Diamond, extended with Lean Startup, as Claude Code skills: discover → define → develop → decide → probe.",
+  "description": "Design thinking's Double Diamond, extended with Lean Startup, as Claude Code skills: discover → define → develop → decide → probe, plus a guide front door.",
   "owner": {
     "name": "Jörgen Karlsson"
   },
@@ -8,7 +8,7 @@
     {
       "name": "double-diamond",
       "source": "./",
-      "description": "Design thinking's Double Diamond + Lean Startup: discover → define → develop → decide → probe. Build the right thing, before you build the thing right."
+      "description": "Design thinking's Double Diamond + Lean Startup: discover → define → develop → decide → probe, plus a guide front door. Build the right thing, before you build the thing right."
     }
   ]
 }

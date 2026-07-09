@@ -1,3 +1,11 @@
+## [0.1.1](http://gitea:3000/10boring/double-diamond/compare/v0.1.0...v0.1.1) (2026-07-09)
+
+
+### Bug Fixes
+
+* document Claude Code-only testing and add guide to marketplace description ([1ee6584](http://gitea:3000/10boring/double-diamond/commit/1ee65843f6e7600ef08739b7783cac4a0399e9a8))
+* license ([b18e0c1](http://gitea:3000/10boring/double-diamond/commit/b18e0c1faa3a4b4ff520415d49809d575888d8e6))
+
 # [0.1.0](http://gitea:3000/10boring/double-diamond/compare/v0.0.1...v0.1.0) (2026-07-06)
 
 
