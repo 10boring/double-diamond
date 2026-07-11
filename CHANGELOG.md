@@ -1,3 +1,10 @@
+## [0.2.1](http://gitea:3000/10boring/double-diamond/compare/v0.2.0...v0.2.1) (2026-07-11)
+
+
+### Bug Fixes
+
+* clarify probe and accepted-risk semantics ([cae751e](http://gitea:3000/10boring/double-diamond/commit/cae751e86b582322275c9b7b57aa87d9fe3568c7))
+
 # [0.2.0](http://gitea:3000/10boring/double-diamond/compare/v0.1.1...v0.2.0) (2026-07-11)
 
 

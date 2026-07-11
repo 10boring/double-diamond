@@ -44,9 +44,10 @@ skip.
   good-but-weird idea survives long enough to be considered.
 - **`decide`** picks one **with you**, on explicit criteria, and **bows out** when there's nothing
   real to choose between instead of manufacturing a fake vote.
-- **`probe`** can step into any phase to design the cheapest experiment that could **disprove** a
-  material assumption, fixes the pass/fail line *before* running it, and returns the evidence to the
-  decision it informs. This is where doomed ideas die cheaply.
+- **`probe`** can step into any phase to design the cheapest honest experiment that can reduce a
+  material uncertainty and return the evidence to the decision it informs. When a probe validates a
+  directional claim or informs a go/no-go decision, its interpretation, metric, and threshold are
+  fixed *before* results. This is where doomed ideas die cheaply.
 
 You finish with a **minimum viable product (MVP)** or **feature (MVF)** experiment: the minimal real
 product or feature, built properly and used by real customers. Cheaper learning vehicles such as
@@ -59,8 +60,9 @@ we?".
 
 ## Why it's different
 
-- **Discipline the agent won't skip.** Generation stays separate from selection. The pass/fail
-  threshold is written *before* the result is seen, so nothing is rationalized after the fact.
+- **Discipline the agent won't skip.** Generation stays separate from selection. When a probe has a
+  pass/fail interpretation, its threshold is written *before* the result is seen; exploratory probes
+  record structured learning without inventing a fake binary result.
 - **You keep the wheel.** The skills propose and record. They don't run a workshop you didn't ask
   for, and they don't decide for you.
 - **A "no" is progress.** A failed probe resets you to the right earlier step *with a learning you
@@ -162,7 +164,8 @@ Lean Startup* below for the one place we depart.
 - **Pivot or persevere.** The decision made from learning. Persevere when the evidence supports
   continuing the current path; pivot when it supports changing a material assumption, problem
   framing, solution, or experiment. An inconclusive result supports neither and calls for sharper
-  learning or an explicitly accepted risk.
+  learning or a named risk consciously accepted on record. Accepting risk does not turn missing
+  evidence into proof or remove the final right-thing verdict.
 
 ## How this differs from Lean Startup
 
@@ -184,6 +187,9 @@ evidence demands it, and use `probe` during any phase when an experiment could c
 Ceremony scales with uncertainty, consequence, and reversibility. A new product may need substantial
 research and several experiments; a well-supported bounded change may need only a light pass. Every
 effort still reaches a right-thing verdict.
+
+The operator may consciously accept a named uncertainty and record that choice, but cannot use the
+acceptance itself as evidence or bypass the toolkit's responsibility for the right-thing verdict.
 
 The final handoff at `docs/designthinking/<slug>.md` is proportional and always has four minimum
 headings: `Problem`, `Solution`, `MVP/MVF`, and `Verdict`. For bounded work it may be only a few lines;
