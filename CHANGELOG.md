@@ -1,3 +1,19 @@
+# [0.2.0](http://gitea:3000/10boring/double-diamond/compare/v0.1.1...v0.2.0) (2026-07-11)
+
+
+### Bug Fixes
+
+* language ([7496c60](http://gitea:3000/10boring/double-diamond/commit/7496c601b2c3b2b36500d78d81d984c44b8779d8))
+* readme ([ae08005](http://gitea:3000/10boring/double-diamond/commit/ae08005c81c90cce53fcfcc5e51b5343787f7057))
+* rename guide skill to coach, phase terminology, English-only skills, and a Lean vocabulary/glossary ([989546e](http://gitea:3000/10boring/double-diamond/commit/989546eb6427b13e57102f0e87350c58c0fad37a))
+* repair invalid YAML in skill descriptions, gate make test on skillscheck, coach explain mode + voice + pivot-or-persevere ([f93b83d](http://gitea:3000/10boring/double-diamond/commit/f93b83d26f7c9db939958f3664e6e7ffa74419c0))
+* review ([b90bb38](http://gitea:3000/10boring/double-diamond/commit/b90bb381b637408ee3cd4ffe30c50385165398dc))
+
+
+### Features
+
+* make Double Diamond proportional ([cfe167c](http://gitea:3000/10boring/double-diamond/commit/cfe167c0d409042152bd9b07423d59a4d7d62b62))
+
 ## [0.1.1](http://gitea:3000/10boring/double-diamond/compare/v0.1.0...v0.1.1) (2026-07-09)
 
 

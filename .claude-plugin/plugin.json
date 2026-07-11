@@ -1,7 +1,7 @@
 {
   "name": "double-diamond",
-  "version": "0.1.1",
-  "description": "Design thinking's Double Diamond + Lean Startup as skills: discover, define, develop, decide (the four D's) and probe (Build-Measure-Learn), with a guide front door. Helps you build the right thing, before you build the thing right.",
+  "version": "0.2.0",
+  "description": "Design thinking's Double Diamond plus cross-cutting Lean experiments: discover, define, develop, decide, probe, and an optional coach. Build the right thing before you build the thing right.",
   "author": {
     "name": "J\u00f6rgen Karlsson"
   },

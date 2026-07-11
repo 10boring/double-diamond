@@ -1,104 +1,114 @@
 ---
 name: decide
-description: Use when a pool of solution options exists and you need to select one, the Double Diamond's fourth move (Deliver, the solution-space narrow, which we call "decide"). Runs AFTER `develop` and hands off to `probe`. Also called (industry synonyms): deliver, converge, select, choose, narrow, prioritize, commit. Trigger on "decide", "converge", "pick one", "narrow it down", "which option", "choose an approach", "decide between these", Swedish "besluta", "konvergera", "välj en", "vilket alternativ". Selects ONE solution idea WITH the operator; it does not generate new options or write a spec.
+description: Use when a defined problem has multiple credible solution mechanisms and one must be selected, the Double Diamond's fourth phase (Deliver, the solution-space narrow, which we call "decide"). Also called (industry synonyms) — deliver, converge, select, choose, narrow, prioritize, commit. Trigger on "decide", "converge", "pick one", "narrow it down", "which option", "choose an approach", "decide between these". Selects ONE solution idea WITH the operator; it does not generate new options or write a spec.
 ---
 
 # decide
 
-The **fourth move** of the Double Diamond (design thinking): **Deliver**, the solution-space
+The **fourth phase** of the Double Diamond (design thinking): **Deliver**, the solution-space
 **narrow**, which we call **decide** (it decides *which* solution to pursue, before anything is
-built or shipped). Given a pool of solution options, narrow to **one** idea. It runs after `develop`
-(which generated the pool) and hands the winner to `probe` (which tests its riskiest assumption
-before it is specified). This is the **selection** phase the method deliberately keeps separate from
-generation, so this is where judgment finally happens.
+built or shipped). Given credible solution mechanisms linked to a defined problem, narrow to **one**
+idea. This is the **selection** phase the method deliberately keeps separate from generation, so
+this is where judgment finally happens.
+
+Read `../OPERATING-CONTRACT.md` first. Its evidence gates, proportional techniques, artifact rule,
+and Double Diamond -> Superpowers boundary apply here.
+
+**Voice.** A coach, not a driver. The coach owns the process, the operator owns the content: listen more than you talk, ask open questions over telling, one at a time (never two in a turn, the answer gets misattributed), and challenge
+the operator's thinking rather than push toward a goal. Warm and concise; never lecture or perform
+a persona. Here: orient first (why we narrow, where we are in the pipeline), then own the
+*process* (bring the structured convergence that shrinks a wide field) while the operator owns the
+*content* (their votes, their pick). Surface the discriminator; never drive a gut decision-tree or
+decide for them.
 
 ## Core principle
 
-Narrow deliberately, with criteria, **with the operator**. Convergence is a workshop move:
-**group, then vote, then pick**. After clustering (affinity), a **dot-vote** surfaces priorities
-before any final decision. Voting informs; the operator still holds the final pick (a tally is not a
-verdict). Being told "just decide for me" does not release the choice. The **dot-vote is a tool for
-a genuine field of competing options**, offered to the operator, not a ritual to run on every
-convergence. Stay a **thinking partner**: surface the discriminator and let the operator choose
-(they may combine options); never announce "now we'll run the vote" and start driving a process the
-operator didn't ask for. A lean is fine; a default-on-silence, or sliding straight into a spec, is
-not, the chosen idea goes to `probe` next, not into a spec.
+**Open by orienting, then narrow.** Before any narrowing, say what this phase is for and *why* it
+narrows: you can't build everything at once, so you pick the **one bet worth pursuing first** and the
+rest become sequenced backlog, not abandoned. Name where you are so the operator never has to ask
+"wait, is this the MVP?". An operator who knows the process cold can still be lost if you never say
+which move you're making.
+
+Narrow deliberately, with the operator. This is where the maxim bites hardest: **own the reasoning
+structure, let the operator own the choice.** Being told "just decide for me" does not release the
+choice. Surface the discriminator, offer evidence-based advice, and ask the operator to confirm or
+redirect; never drive them down a gut decision-tree or make a default they must veto.
+
+Default to a direct convergence conversation: name the discriminator, compare the credible options
+against the defined problem, recommend one with reasoning, and ask the operator to confirm or
+redirect. The recommendation is advice, not a default-on-silence.
+
+Use clustering, dot-voting, or workshop mechanics only when the field is too wide to reason about
+directly or multiple stakeholders need structured participation. If a material uncertainty about
+the discriminator prevents a responsible choice, invoke `probe` and return its evidence here.
 
 ## Precondition
 
-`decide` picks from a pool that a real `develop` produced on top of a real `define`. So the gate
-reads the **upstream chain**, not a status word. The working file
-(`docs/designthinking/<slug>.md`, else `~/.claude/design/<slug>.md`) must carry, with genuine
-content:
-
-- `## Discover` — real problem material;
-- `## Define` — a reframed problem **the operator confirmed**, plus the named smuggled assumption;
-- `## Develop` — a pool of distinct options.
-
-`Status` is just a breadcrumb for the reader, never the gate: a hand-set `Status:` line proves
-nothing. The content and the operator's confirmation do (that last one is the signal you can't
-author on their behalf).
+`decide` needs minimum evidence for the choice: a clear, operator-confirmed problem definition plus
+at least two credible, genuinely distinct solution mechanisms that each state how they could address
+it. Use the evidence wherever it lives; gate on substance, never on phases, headings, files, or
+`Status` breadcrumbs.
 
 <HARD-GATE>
-No pick without a real `## Define` and `## Develop` above it. If the pool only lives here in the
-chat, or `## Define` was never confirmed with the operator, don't decide on it yet — back up and
-frame it (→ `define`, or `discover` if the problem isn't grounded either). It's a 30-second detour
-and then the choice actually means something; moving `Status` back is the method working, not a
-failure.
-
-Stepping over on purpose is allowed — the operator can say "yes, we skipped define, choose anyway" —
-but only consciously and **on record**: note the skipped phase in `## Decide`. Only the *accidental*
-skip is blocked.
+Do not pick without a defined problem and a genuine fork among problem-linked mechanisms. If the
+problem is not confirmed, reset to `define` (or `discover` if it is not grounded). If current
+evidence supports exactly one credible problem-linked mechanism, bypass `decide` and carry it toward
+the proportional handoff without manufacturing a fork. If the candidate set is inadequate,
+repetitive, or disconnected from the problem rather than a supported single mechanism, reset to
+`develop`.
 </HARD-GATE>
 
 **Caught yourself thinking...**
 
 | Thought | Nah |
 |---------|-----|
-| "The pool's right here in the chat" | A chat pool isn't a `## Develop` — no operator, no blind agent lenses, no framed `## Define` above it. Run it through `develop` first. |
-| "I'll just write the `## Define` myself" | One you authored without the operator's confirmation isn't a define. Confirm the reframe with them. |
+| "The evidence is only in the chat" | Location is irrelevant; verify that the problem is confirmed and the mechanisms are genuine and problem-linked. |
+| "I'll infer the confirmed problem" | Product confirmation belongs to the operator; ask rather than authoring it on their behalf. |
 
 ## When to skip it
 
-`decide` **selects one from an enumerable pool of mutually-exclusive whole-solution options.** If
-that isn't the work, you're **building a model / taxonomy** or **co-developing a vocabulary** with
-the operator one concept at a time, not choosing between competing wholes, then this is **not**
-`decide`. Don't manufacture a fork or a dot-vote where none exists; say so and stay in the
-operator-led build. (That collaborative-build mode is a known gap in these skills, not yet its own
-move.)
+`decide` **selects one from an enumerable pool of mutually exclusive whole-solution mechanisms.**
+When no genuine fork exists, state that `decide` adds no value. Carry the single supported solution
+toward the proportional handoff rather than manufacturing alternatives or a vote. If the work is
+building a model, taxonomy, or vocabulary rather than choosing between competing wholes, stay in
+that operator-led build.
 
 ## Workflow
 
-1. **Read the pool and the defined problem** (`## Develop` and `## Define`) from the working file.
-2. **Cluster (affinity).** Group the raw options into a handful of genuinely distinct approaches
-   (merge rewordings, keep distinct mechanisms).
-3. **Set criteria with the operator.** What actually decides this (cost, risk, reversibility, fit,
-   speed)?
-4. **Dot-vote (group → vote, as in a workshop).** Give the operator a dot budget (default 5) to
-   distribute across the clusters/options, stacking allowed. Optionally fan out independent
-   agent-voters, each casting the same budget under the agreed criteria, blind to each other; then
-   tally, so selection also pulls from independent sources. Collect the operator's dots **first** so
-   the panel tally never anchors them. The board narrows the field to a top-voted shortlist.
-5. **Narrow to ONE.** The operator picks from the shortlist (combining is fine). You hold the pick
-   and surface the tradeoff; the tally **informs, it does not decide**, and you never set a default
-   he must veto.
-6. **Write and hand off.** Write the `## Decide` section (criteria + vote tally + the one chosen
-   idea), set `Status: probing`, and hand the single idea to `probe` to have its riskiest assumption
-   tested before it is specified.
+1. **Read the credible mechanisms and defined problem** from the best current evidence. Confirm that
+   every option states how its mechanism could address that problem.
+2. **Anchor the measure to the choice, then ask for it.** Criteria only mean something once the
+   operator can see *what* is being chosen between and *toward what goal*, otherwise "what's your
+   yardstick?" earns the honest "yardstick for *what*?". So name the field and the goal first (we're
+   picking one bet to pursue from these mechanisms), *then* ask what would make them pick one over
+   another: expected user outcome, cost, risk, reversibility, fit, or speed of learning. The criteria
+   must reflect the actual field and goal.
+3. **Compare and recommend.** Name the material discriminator, compare the credible options against
+   the defined problem and criteria, recommend one with reasoning, and ask the operator to confirm
+   or redirect. Do not generate new options here.
+4. **Scale the technique when needed.** For a field too wide to reason about directly, cluster first
+   and optionally use `<skill-dir>/../DOT-VOTE.md`. For multiple stakeholders, use proportional
+   workshop mechanics. The tally informs; it never decides, and the operator retains the final pick.
+5. **Route by evidence after the choice.** Invoke `probe` only for a material uncertainty that could
+   change the decision. Otherwise state the evidence-backed right-thing verdict and obtain the
+   operator's explicit confirmation, then write the proportional handoff. Include the chosen
+   mechanism's trace to the defined problem, a measurable product-level signal in `MVP/MVF` showing
+   whether it solves that problem, and both the conclusion and explicit confirmation in `Verdict`.
 
 ## Reset
 
 If nothing in the pool fits, reset to `develop` for more options. If the criteria reveal the
-**problem itself** is wrong, reset to `define` (or `discover`). Moving `Status` backward is the
-method's iteration, not a failure.
+**problem itself** is wrong, reset to `define` (or `discover`). Returning to an earlier question is
+the method's iteration, not a failure.
 
 ## What it does NOT do
 
-- **Doesn't generate new options** — that is `develop`; if the pool is thin, reset to it.
+- **Doesn't generate new options** — that is `develop`; reset for an inadequate candidate set, but
+  bypass `decide` when one credible problem-linked mechanism is supported.
 - **Doesn't decide for the operator** — it lays out the discriminator and holds the pick, even when
   told to decide.
-- **Doesn't specify** — the chosen idea goes to `probe` (then `brainstorming`, once it passes);
-  `decide` writes no spec, plan, or code.
+- **Doesn't specify** — it writes the proportional Double Diamond handoff, not a detailed spec, plan,
+  or code.
 
 ## Common mistakes
 
@@ -107,9 +117,13 @@ method's iteration, not a failure.
 | "Just decide for me" → pick one and start speccing | Hold the pick; surface the discriminator; hand off after the operator chooses |
 | Manufacturing a default-on-silence | The choice stays with the operator |
 | Generating fresh options here | Reset to `develop`; `decide` only selects |
-| Sliding from the pick straight into a spec | Hand the one idea to `probe`; it tests before `brainstorming` specifies |
-| Selecting on an empty/thin pool | Reset to `develop` (or `define`) |
-| Jumping from clusters straight to a pick | Group, then dot-vote, then the operator picks from the top |
+| Sliding from the pick straight into a spec | Probe only material uncertainty; otherwise write the proportional handoff |
+| Treating every one-option field as inadequate | Bypass for one supported problem-linked mechanism; reset an inadequate or disconnected set |
+| Treating workshop mechanics as the default | Compare directly; cluster or vote only for a wide field or multiple stakeholders |
 | Showing the panel tally before the operator votes | Collect the operator's dots first; don't anchor them |
 | Running a dot-vote with no real field of competing options | If it isn't a selection among mutually-exclusive wholes, it isn't `decide`; bow out |
-| Announcing "now we'll run X" and driving a process | Propose and surface the discriminator; the operator drives |
+| Announcing "now we'll run X" and railroading it | Propose the structure and facilitate lightly; the operator owns the votes and the pick |
+| Dropping the structure and driving a gut decision-tree | Own the process (structure + orientation); the operator owns the votes and the pick |
+| Treating a recommendation as the decision | Give the reasoning, then ask the operator to confirm or redirect |
+| Narrowing before saying why (operator asks "is this the MVP?") | Orient first: why one bet, where we are in the pipeline |
+| Asking for criteria before the operator can see what's measured | Name the field and the goal first; an unanchored "yardstick?" earns "yardstick for what?" |
