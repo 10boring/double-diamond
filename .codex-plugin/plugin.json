@@ -6,6 +6,8 @@
     "name": "J\u00f6rgen Karlsson"
   },
   "license": "PolyForm-Noncommercial-1.0.0",
+  "homepage": "https://github.com/10boring/double-diamond",
+  "repository": "https://github.com/10boring/double-diamond",
   "keywords": [
     "design-thinking",
     "double-diamond",
@@ -13,5 +15,6 @@
     "product-discovery",
     "build-measure-learn",
     "mvp"
-  ]
+  ],
+  "skills": "./skills/"
 }

@@ -1,3 +1,10 @@
+## [0.2.2](http://gitea:3000/10boring/double-diamond/compare/v0.2.1...v0.2.2) (2026-07-11)
+
+
+### Bug Fixes
+
+* codex support ([f290bad](http://gitea:3000/10boring/double-diamond/commit/f290bad6d901278d6d408587cafead2d46868bbf))
+
 ## [0.2.1](http://gitea:3000/10boring/double-diamond/compare/v0.2.0...v0.2.1) (2026-07-11)
 
 

@@ -228,17 +228,15 @@ the catalog of all 10boring plugins.
 
 ## Install in Codex
 
-Clone this repository, then copy the six skill directories and their shared references into your
-Codex skills directory:
+Add the marketplace from GitHub and install the plugin:
 
 ```sh
-mkdir -p ~/.codex/skills
-cp -R skills/coach skills/discover skills/define skills/develop skills/decide skills/probe ~/.codex/skills/
-cp skills/OPERATING-CONTRACT.md skills/DOT-VOTE.md ~/.codex/skills/
+codex plugin marketplace add 10boring/double-diamond
+codex plugin add double-diamond@double-diamond
 ```
 
-Start a fresh Codex session so skill discovery refreshes. The six skills should appear as `coach`,
-`discover`, `define`, `develop`, `decide`, and `probe`.
+Start a fresh Codex session so plugin and skill discovery refreshes. The six skills should appear as
+`coach`, `discover`, `define`, `develop`, `decide`, and `probe`.
 
 ## License
 

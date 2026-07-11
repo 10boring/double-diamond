@@ -1,0 +1,20 @@
+{
+  "name": "double-diamond",
+  "owner": {
+    "name": "Jörgen Karlsson"
+  },
+  "plugins": [
+    {
+      "name": "double-diamond",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "description": "Design thinking's Double Diamond plus cross-cutting Lean experiments. Build the right thing before you build the thing right.",
+      "category": "Productivity",
+      "policy": {
+        "installation": "AVAILABLE"
+      }
+    }
+  ]
+}
